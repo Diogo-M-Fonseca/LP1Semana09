@@ -1,8 +1,8 @@
 namespace AnimalKingdom
 {
 
-public interface IMamal
+public interface IMammal
 {
-    int NumberOfNiples {get;}
+    int NumberOfNipples {get;}
 }
 }
