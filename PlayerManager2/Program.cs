@@ -145,15 +145,13 @@ namespace PlayerManager2
         /// </returns>
         private IEnumerable<Player> GetPlayersWithScoreGreaterThan(int minScore)
         {
-            List<Player> greatPlayer = new List<Player>();
             foreach (Player player in playerList)
-           {
+            {
                 if (player.Score > minScore)
                 {
-                    greatPlayer.Add(player);
+                    yield return player;
                 }
-           }
-           return greatPlayer;
+            }
         }
     }
 }
